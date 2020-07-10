@@ -1,0 +1,18 @@
+{
+  "title": "Joe Letchford",
+  "url": "joeletchford.com",
+  "description": "Joe is a multi-disciplinary graphic designer from Richmond, Virginia specializing in print and digital design. He thrives in collaboration focusing on systematic design solutions in both his personal and professional practice. His personal work predominately explores the natural environment and the different ways that we, as a digitally literate society, interact with it.",
+  "googleID": "xxxxxxxxxxxxxxx",
+  "repo": "https://github.com/Joeletchford/portfolio-2020",
+  "feed": {
+    "subtitle": "",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "joeletchford.com"
+  },
+  "author": {
+    "name": "Joe Letchford",
+    "email": "joeletchford@gmail.com",
+    "avatar": ""
+  }
+}

@@ -1,0 +1,60 @@
+---
+title: Home
+layout: layouts/default.html
+---
+
+    <main class="fl pa2">
+      {%- for post in collections.post -%}
+      <div class="fl w-25-ns w-50-m w-100 pa1">
+      <a href="{{ post.url }}" class="no-underline black ">
+        <!-- <div class=" tc mt1 mb1">
+            <p class="f6">{{ post.data.title }}</p>
+        </div> -->
+        <div class="cf fl link bg-lightest-blue ba b-navy w-100 br-pill shadow-hover pa2">
+          <div class=" w-25">
+              <div class="w-100 fl aspect-ratio aspect-ratio--1x1">
+            <img style="background-image:url({{ post.data.image_cat }})" img class="bg-center cover aspect-ratio--object br-100 "/>
+          </div>
+        </div>
+          <div class=" ph3 pl1 fl w-75 navy">
+            <div class="v-mid">
+              <p class="f6">{{ post.data.title }}</p>
+            <p class="f6">{{ post.data.excerpt }}</p>
+            </div>
+
+          </div>
+          </div>
+        </a>
+          </div>
+        {%- endfor -%}
+    </main>
+
+
+
+
+
+
+
+<main class="cf pa2">
+  {%- for post in collections.post offset:1-%}
+    <div class="dib link dim w-100 w-50-ns ph2">
+      <a href="{{ post.url }}" class="pv2 db no-underline black"><img class="db w-100 br3" src="{{ post.data.image_cat }}"></a>
+      <div class="ph2 ph0-ns pb3 db">
+        <h3 class="f5 f4-ns mb0 black-90">{{ post.data.title }}</h3>
+        <h3 class="f6 f5 fw4 mt2 black-60">{{ post.data.excerpt }}</h3>
+      </div>
+    </div>
+
+    {%- endfor -%}
+</main> -->
+
+<!--
+ <section class="mw6 mw7-ns center pa3 ph5-ns">
+<div class="bg-white red pa2 lh-copy fw1 courier">
+  <ol>
+    <li>Edit the <code>_data/site.json</code> with your site's information.</li>
+    <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
+    <li>Delete this message from <code>index.html</code>.</li>
+  </ol>
+</div>
+</section>

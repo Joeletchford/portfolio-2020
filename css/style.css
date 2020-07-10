@@ -1,0 +1,56 @@
+@font-face {
+  font-family:'FoundersGroteskText-Light';
+  src: url('/my-site-name/fonts/FoundersGroteskText-Light.ttf');
+}
+
+.light{
+	font-family: 'FoundersGroteskText-Light';
+}
+
+@font-face {
+  font-family:'FoundersGrotesk-Regular';
+  src: url('/my-site-name/fonts/FoundersGrotesk-Regular.ttf');
+}
+
+
+.regular{
+	font-family: 'FoundersGrotesk-Regular';
+}
+
+
+p {
+  display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.shadow-hover {
+  cursor: pointer;
+  position: relative;
+  transition: all .1s cubic-bezier(1, 1, 1, 1);
+}
+
+
+.shadow-hover::after {
+    content: "";
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+    border-radius: inherit;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+
+
+
+
+
+    /* slide show */

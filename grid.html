@@ -1,0 +1,27 @@
+---
+title: Big
+layout: layouts/default.html
+---
+
+<main class="cf pa2">
+  {%- for post in collections.post offset:1 -%}
+    <div class="dib link dim w-100 w-50-ns ph2">
+      <a href="{{ post.url }}" class="pv2 db no-underline black"><img class="db w-100 br3" src="{{ post.data.image_cat }}"></a>
+      <div class="ph2 ph0-ns pb3 db">
+        <h3 class="f5 f4-ns mb0 black-90">{{ post.data.title }}</h3>
+        <h3 class="f6 f5 fw4 mt2 black-60">{{ post.data.excerpt }}</h3>
+      </div>
+    </div>
+
+    {%- endfor -%}
+</main>
+
+ <section class="mw6 mw7-ns center pa3 ph5-ns">
+<div class="bg-white red pa2 lh-copy fw1 courier">
+  <ol>
+    <li>Edit the <code>_data/site.json</code> with your site's information.</li>
+    <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
+    <li>Delete this message from <code>index.html</code>.</li>
+  </ol>
+</div>
+</section>
